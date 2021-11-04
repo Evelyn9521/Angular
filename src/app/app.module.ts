@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 //modulos
 import { HeroesModule } from './heroes/heroes.module';
 import { ContadorModule } from './contador/contador.module';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [ //se colocan los componentes individuales que no tienen modulos
@@ -19,7 +20,8 @@ import { ContadorModule } from './contador/contador.module';
   imports: [ //se colocan modulos agrupados entre sí
     BrowserModule,
     HeroesModule,  //modulo de heroes
-    ContadorModule
+    ContadorModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -36,3 +38,4 @@ export class AppModule { }
 //para levantar servidor ng serve -o
 //Para crear un componente automaticamente se utiliza el comando ng generate component nombre de la carpeta/nombre del componente
 //crear un componente version simplificada ng g c nombre carpeta/ nombre componente
+// Angular cli para crear un modulo automaticamente ng g m nombre 
